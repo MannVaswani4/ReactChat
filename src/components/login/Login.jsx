@@ -16,6 +16,12 @@ const Login = () => {
     const handleLogin = e =>{
         e.preventDefault();
     }
+
+    const handleRegister = e =>{
+        e.preventDefault();
+    }
+
+
     return (
       <div className='login'>
         <div className="item">
@@ -29,7 +35,7 @@ const Login = () => {
         <div className="separator"></div>
         <div className="item">
             <h2>Create Account</h2>
-            <form>
+            <form onSubmit={handleRegister}>
                 <label htmlFor="file">
                     <img src={avatar.url || "./avatar.png"} alt="" />
                     Upload a file</label>
